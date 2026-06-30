@@ -220,6 +220,10 @@ app.get('/product/:id', (req, res, next) => {
 });
 ```
 
+#### Passo 5
+
+Após implementar a função `SearchProductByID()`, adicione um campo `student_name` ao objeto retornado em `services/inventory/index.js`, com o valor sendo o seu primeiro nome. 
+
 Finalize, efetuando uma chamada no novo endpoint da API: http://localhost:3000/product/1
 
 Para ficar claro: até aqui, apenas implementamos a nova operação no backend. A sua incorporação no frontend ficará pendente, pois requer mudar a interface Web, para, por exemplo, incluir um botão "Pesquisar Livro".
